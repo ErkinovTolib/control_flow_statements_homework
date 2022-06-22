@@ -13,7 +13,9 @@ def main(a):
         string: the message to print
     """
     s = ""
-   
+    if a==0:
+        s = "zero"
+
     if a>0:
        s="positive"
 
@@ -25,8 +27,5 @@ def main(a):
 
     else:
         s+=" odd"
-    
-    if a==0:
-        s = "zero"
     return s
-print(main(1))
+print(main(9))
