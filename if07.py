@@ -13,14 +13,16 @@ def main(a):
         string: the message to print
     """
     s = ""
-    if(a > 0):
-        s = "positive "
+    if a>0:
+        s = "positive"
+    if a<0:
+        s = "negative"
+    if a%2==0:
+        s+=" even number"
     else:
-        s = "negative "
-    if(a % 2):
-        s += " odd number "
-    else:
-        s += " even number"
-    if(a == 0):
+        s+=" odd number"
+    if a==0:
         return "the number is zero"
     return s
+
+   
