@@ -14,13 +14,13 @@ def main(a):
     """
     s = ""
     if(a > 0):
-        s += "positive "
+        s = "positive "
     else:
-        s += "negative "
-    if(a % 2!=0):
-        s += "odd "
+        s = "negative "
+    if(a % 2):
+        s += "odd number "
     else:
-        s += "even "
+        s += "even number"
     if(a == 0):
-        return "zero"
+        return "the number is zero"
     return s
