@@ -21,7 +21,6 @@ def main(a):
         s += "odd "
     else:
         s += "even "
-    s += "number"
     if(a == 0):
         return "zero"
     return s
